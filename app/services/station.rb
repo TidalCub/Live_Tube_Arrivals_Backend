@@ -20,13 +20,16 @@ class Station
   private
 
   def station_by_location(longitude, latitude, stopTypes = "NaptanMetroStation")
-    response = self.class.get("/?lat=#{latitude}&lon=#{longitude}&stopTypes=#{stopTypes}")
+    response = self.class.get("/?lat=#{latitude}&lon=#{longitude}&stopTypes=#{stopTypes}&radius=400")
+    if response["stopPoints"].empty? || response.status != 200
+      return { error: "No station found" }
+    end
     stations = response["stopPoints"].map do |stop_point|
       next unless stop_point["modes"].include?("tube")
       formate_stop_point(stop_point)
     end.compact
 
-      stations.first
+    stations.first
   end
 
   def formate_stop_point(stop_point)
@@ -62,6 +65,10 @@ class Station
           expected_arrival: arrival["expectedArrival"]
         }
       end
+    end
+
+    lines.each do |line_id, line_arrivals|
+      lines[line_id] = line_arrivals.sort_by { |arrival| arrival[:time_to_station] }
     end
 
     lines
