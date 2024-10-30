@@ -21,7 +21,7 @@ class Station
 
   def station_by_location(longitude, latitude, stopTypes = "NaptanMetroStation")
     response = self.class.get("/?lat=#{latitude}&lon=#{longitude}&stopTypes=#{stopTypes}&radius=400")
-    if response["stopPoints"].empty? || response.status != 200
+    if response["stopPoints"].empty?
       return { error: "No station found" }
     end
     stations = response["stopPoints"].map do |stop_point|
