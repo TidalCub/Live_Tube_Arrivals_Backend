@@ -1,0 +1,368 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/StopPoint/940GZZLUSTD/arrivals
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Oct 2024 11:06:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2048'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, must-revalidate, max-age=30, s-maxage=60
+      Via:
+      - 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '44'
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Api-Entity-Payload:
+      - Prediction
+      X-Backend:
+      - api
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '2'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Frame-Options:
+      - deny
+      X-Proxy-Connection:
+      - unset
+      X-Ttl:
+      - '60.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - 1277021939 1277013357
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Operation:
+      - StopPoint_ArrivalsByPathId
+      X-Api:
+      - StopPoint
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - _cfuvid=LZ1iimNjDw2e2bkBej5f3Kk9GwW6YWyLp8t310ZWPn4-1730286396692-0.0.1.1-604800000;
+        path=/; domain=.tfl.gov.uk; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8daaefdafce5bd9f-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"$type":"Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities","id":"1751294973","operationType":1,"vehicleId":"001","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWRP","destinationName":"West
+        Ruislip Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":50,"currentLocation":"Between
+        Leyton and Stratford","towards":"West Ruislip","expectedArrival":"2024-10-30T11:05:59Z","timeToLive":"2024-10-30T11:05:59Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}}
+        
+        
+        ,{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-853923752","operationType":1,"vehicleId":"002","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWRP","destinationName":"West
+        Ruislip Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":260,"currentLocation":"Approaching
+        Leyton","towards":"West Ruislip","expectedArrival":"2024-10-30T11:09:29Z","timeToLive":"2024-10-30T11:09:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1364075325","operationType":1,"vehicleId":"003","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWRP","destinationName":"West
+        Ruislip Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":500,"currentLocation":"Between
+        Snaresbrook and Leytonstone","towards":"West Ruislip","expectedArrival":"2024-10-30T11:13:29Z","timeToLive":"2024-10-30T11:13:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1885946286","operationType":1,"vehicleId":"004","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWRP","destinationName":"West
+        Ruislip Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1100,"currentLocation":"Between
+        Buckhurst Hill and Woodford","towards":"West Ruislip","expectedArrival":"2024-10-30T11:23:29Z","timeToLive":"2024-10-30T11:23:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-721357303","operationType":1,"vehicleId":"005","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWRP","destinationName":"West
+        Ruislip Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1520,"currentLocation":"At
+        Debden","towards":"West Ruislip","expectedArrival":"2024-10-30T11:30:29Z","timeToLive":"2024-10-30T11:30:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-853989288","operationType":1,"vehicleId":"012","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUEPG","destinationName":"Epping
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":110,"currentLocation":"Between
+        Mile End and Stratford","towards":"Epping","expectedArrival":"2024-10-30T11:06:59Z","timeToLive":"2024-10-30T11:06:59Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1364140861","operationType":1,"vehicleId":"013","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUEPG","destinationName":"Epping
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":260,"currentLocation":"At
+        Mile End","towards":"Epping","expectedArrival":"2024-10-30T11:09:29Z","timeToLive":"2024-10-30T11:09:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1885880750","operationType":1,"vehicleId":"014","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUEPG","destinationName":"Epping
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":680,"currentLocation":"At
+        Liverpool Street","towards":"Epping","expectedArrival":"2024-10-30T11:16:29Z","timeToLive":"2024-10-30T11:16:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-720374263","operationType":1,"vehicleId":"015","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUEPG","destinationName":"Epping
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":920,"currentLocation":"At
+        St. Paul''s","towards":"Epping","expectedArrival":"2024-10-30T11:20:29Z","timeToLive":"2024-10-30T11:20:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1230537996","operationType":1,"vehicleId":"016","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUEPG","destinationName":"Epping
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1460,"currentLocation":"At
+        Bond Street","towards":"Epping","expectedArrival":"2024-10-30T11:29:29Z","timeToLive":"2024-10-30T11:29:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"408874847","operationType":1,"vehicleId":"017","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUEPG","destinationName":"Epping
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1640,"currentLocation":"At
+        Lancaster Gate","towards":"Epping","expectedArrival":"2024-10-30T11:32:29Z","timeToLive":"2024-10-30T11:32:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-720636407","operationType":1,"vehicleId":"055","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUEBY","destinationName":"Ealing
+        Broadway Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":140,"currentLocation":"Between
+        Leyton and Stratford","towards":"Ealing Broadway","expectedArrival":"2024-10-30T11:07:29Z","timeToLive":"2024-10-30T11:07:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1230800140","operationType":1,"vehicleId":"056","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUEBY","destinationName":"Ealing
+        Broadway Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":620,"currentLocation":"Left
+        Redbridge","towards":"Ealing Broadway","expectedArrival":"2024-10-30T11:15:29Z","timeToLive":"2024-10-30T11:15:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"408612703","operationType":1,"vehicleId":"057","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUEBY","destinationName":"Ealing
+        Broadway Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1160,"currentLocation":"At
+        Fairlop","towards":"Ealing Broadway","expectedArrival":"2024-10-30T11:24:29Z","timeToLive":"2024-10-30T11:24:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-855365544","operationType":1,"vehicleId":"062","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":440,"currentLocation":"At
+        Bethnal Green","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:12:29Z","timeToLive":"2024-10-30T11:12:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1363419965","operationType":1,"vehicleId":"063","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":800,"currentLocation":"At
+        Bank","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:18:29Z","timeToLive":"2024-10-30T11:18:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1884504494","operationType":1,"vehicleId":"064","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1280,"currentLocation":"At
+        Tottenham Court Road","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:26:29Z","timeToLive":"2024-10-30T11:26:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-720701943","operationType":1,"vehicleId":"065","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1760,"currentLocation":"Approaching
+        Queensway","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:34:29Z","timeToLive":"2024-10-30T11:34:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1751294972","operationType":1,"vehicleId":"101","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1040,"currentLocation":"At
+        Chancery Lane","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:22:29Z","timeToLive":"2024-10-30T11:22:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-853923737","operationType":1,"vehicleId":"102","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1580,"currentLocation":"Between
+        Lancaster Gate and Marble Arch","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:31:29Z","timeToLive":"2024-10-30T11:31:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-2033565935","operationType":1,"vehicleId":"110","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Westbound
+        - Platform 3","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUWCY","destinationName":"White
+        City Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":320,"currentLocation":"Between
+        Leytonstone and Leyton","towards":"White City","expectedArrival":"2024-10-30T11:10:29Z","timeToLive":"2024-10-30T11:10:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-720374264","operationType":1,"vehicleId":"115","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"central","lineName":"Central","platformName":"Eastbound
+        - Platform 6","direction":"outbound","bearing":"","destinationNaptanId":"940GZZLUHLT","destinationName":"Hainault
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":560,"currentLocation":"Between
+        Liverpool Street and Bethnal Green","towards":"Hainault via Newbury Park","expectedArrival":"2024-10-30T11:14:29Z","timeToLive":"2024-10-30T11:14:29Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:43.806Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"779354274","operationType":1,"vehicleId":"303","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":231,"currentLocation":"Left
+        West Ham","towards":"Stratford","expectedArrival":"2024-10-30T11:09:00Z","timeToLive":"2024-10-30T11:09:00Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"779354274","operationType":1,"vehicleId":"303","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":231,"currentLocation":"Left
+        West Ham","towards":"Stratford","expectedArrival":"2024-10-30T11:09:00Z","timeToLive":"2024-10-30T11:09:00Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"779354274","operationType":1,"vehicleId":"303","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":261,"currentLocation":"Left
+        West Ham","towards":"Stratford","expectedArrival":"2024-10-30T11:09:30Z","timeToLive":"2024-10-30T11:09:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"912434835","operationType":1,"vehicleId":"316","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":742,"currentLocation":"Between
+        Canada Water and Canary Wharf","towards":"Stratford","expectedArrival":"2024-10-30T11:17:31Z","timeToLive":"2024-10-30T11:17:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"912434835","operationType":1,"vehicleId":"316","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":801,"currentLocation":"Between
+        Canada Water and Canary Wharf","towards":"Stratford","expectedArrival":"2024-10-30T11:18:30Z","timeToLive":"2024-10-30T11:18:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"912434835","operationType":1,"vehicleId":"316","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":741,"currentLocation":"Between
+        Canada Water and Canary Wharf","towards":"Stratford","expectedArrival":"2024-10-30T11:17:30Z","timeToLive":"2024-10-30T11:17:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734659266","operationType":1,"vehicleId":"317","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1222,"currentLocation":"Approaching
+        London Bridge","towards":"Stratford","expectedArrival":"2024-10-30T11:25:31Z","timeToLive":"2024-10-30T11:25:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734659266","operationType":1,"vehicleId":"317","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1221,"currentLocation":"Approaching
+        London Bridge","towards":"Stratford","expectedArrival":"2024-10-30T11:25:30Z","timeToLive":"2024-10-30T11:25:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734659266","operationType":1,"vehicleId":"317","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1221,"currentLocation":"Approaching
+        London Bridge","towards":"Stratford","expectedArrival":"2024-10-30T11:25:30Z","timeToLive":"2024-10-30T11:25:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734855874","operationType":1,"vehicleId":"327","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":681,"currentLocation":"Between
+        Canary Wharf and North Greenwich","towards":"Stratford","expectedArrival":"2024-10-30T11:16:30Z","timeToLive":"2024-10-30T11:16:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734855874","operationType":1,"vehicleId":"327","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":621,"currentLocation":"Between
+        Canary Wharf and North Greenwich","towards":"Stratford","expectedArrival":"2024-10-30T11:15:30Z","timeToLive":"2024-10-30T11:15:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734855874","operationType":1,"vehicleId":"327","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":622,"currentLocation":"Between
+        Canary Wharf and North Greenwich","towards":"Stratford","expectedArrival":"2024-10-30T11:15:31Z","timeToLive":"2024-10-30T11:15:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734790338","operationType":1,"vehicleId":"337","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":381,"currentLocation":"Left
+        Canning Town","towards":"Stratford","expectedArrival":"2024-10-30T11:11:30Z","timeToLive":"2024-10-30T11:11:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734790338","operationType":1,"vehicleId":"337","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":381,"currentLocation":"Left
+        Canning Town","towards":"Stratford","expectedArrival":"2024-10-30T11:11:30Z","timeToLive":"2024-10-30T11:11:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-1734790338","operationType":1,"vehicleId":"337","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":381,"currentLocation":"Left
+        Canning Town","towards":"Stratford","expectedArrival":"2024-10-30T11:11:30Z","timeToLive":"2024-10-30T11:11:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"108192637","operationType":1,"vehicleId":"340","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1821,"currentLocation":"At
+        Bond Street Platform 4","towards":"Stratford","expectedArrival":"2024-10-30T11:35:30Z","timeToLive":"2024-10-30T11:35:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"108192637","operationType":1,"vehicleId":"340","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1762,"currentLocation":"At
+        Bond Street Platform 4","towards":"Stratford","expectedArrival":"2024-10-30T11:34:31Z","timeToLive":"2024-10-30T11:34:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"108192637","operationType":1,"vehicleId":"340","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1821,"currentLocation":"At
+        Bond Street Platform 4","towards":"Stratford","expectedArrival":"2024-10-30T11:35:30Z","timeToLive":"2024-10-30T11:35:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"779616418","operationType":1,"vehicleId":"343","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":141,"currentLocation":"Between
+        West Ham and Stratford","towards":"Stratford","expectedArrival":"2024-10-30T11:07:30Z","timeToLive":"2024-10-30T11:07:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"779616418","operationType":1,"vehicleId":"343","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":111,"currentLocation":"Between
+        West Ham and Stratford","towards":"Stratford","expectedArrival":"2024-10-30T11:07:00Z","timeToLive":"2024-10-30T11:07:00Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"779616418","operationType":1,"vehicleId":"343","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":111,"currentLocation":"Between
+        West Ham and Stratford","towards":"Stratford","expectedArrival":"2024-10-30T11:07:00Z","timeToLive":"2024-10-30T11:07:00Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"-258892343","operationType":1,"vehicleId":"354","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","direction":"inbound","bearing":"","destinationNaptanId":"940GZZLUSTM","destinationName":"Stanmore
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":31,"currentLocation":"At
+        Platform","towards":"Stanmore","expectedArrival":"2024-10-30T11:05:40Z","timeToLive":"2024-10-30T11:05:40Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1439640180","operationType":1,"vehicleId":"365","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 14","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1461,"currentLocation":"At
+        Westminster Platform 3","towards":"Stratford","expectedArrival":"2024-10-30T11:29:30Z","timeToLive":"2024-10-30T11:29:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1439640180","operationType":1,"vehicleId":"365","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 13","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1461,"currentLocation":"At
+        Westminster Platform 3","towards":"Stratford","expectedArrival":"2024-10-30T11:29:30Z","timeToLive":"2024-10-30T11:29:30Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}},{"$type":"Tfl.Api.Presentation.Entities.Prediction,
+        Tfl.Api.Presentation.Entities","id":"1439640180","operationType":1,"vehicleId":"365","naptanId":"940GZZLUSTD","stationName":"Stratford
+        Underground Station","lineId":"jubilee","lineName":"Jubilee","platformName":"Westbound
+        - Platform 15","bearing":"","destinationNaptanId":"940GZZLUSTD","destinationName":"Stratford
+        Underground Station","timestamp":"2024-10-30T11:05:09.9158113Z","timeToStation":1462,"currentLocation":"At
+        Westminster Platform 3","towards":"Stratford","expectedArrival":"2024-10-30T11:29:31Z","timeToLive":"2024-10-30T11:29:31Z","modeName":"tube","timing":{"$type":"Tfl.Api.Presentation.Entities.PredictionTiming,
+        Tfl.Api.Presentation.Entities","countdownServerAdjustment":"00:00:00","source":"0001-01-01T00:00:00","insert":"0001-01-01T00:00:00","read":"2024-10-30T11:05:41.058Z","sent":"2024-10-30T11:05:09Z","received":"0001-01-01T00:00:00"}}]'
+  recorded_at: Wed, 30 Oct 2024 11:06:36 GMT
+recorded_with: VCR 6.3.1

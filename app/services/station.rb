@@ -12,6 +12,11 @@ class Station
     end
   end
 
+  def live_departures_predictions
+    arrivals = self.class.get("/#{@station[:naptan_id]}/arrivals")
+    formate_arrivals(arrivals)
+  end
+
   private
 
   def station_by_location(longitude, latitude, stopTypes = "NaptanMetroStation")
@@ -21,17 +26,7 @@ class Station
       formate_stop_point(stop_point)
     end.compact
 
-    if stations.count == 1
       stations.first
-    else
-      closest_station(stations, longitude, latitude)
-    end
-  end
-
-  def closest_station(stations, longitude, latitude)
-    stations.min_by do |station|
-      haversine_distance([ latitude, longitude ], [ station[:latitude], station[:longitude] ])
-    end
   end
 
   def formate_stop_point(stop_point)
@@ -39,7 +34,46 @@ class Station
         naptan_id: stop_point["naptanId"],
         name: stop_point["commonName"],
         latitude: stop_point["lat"],
-        longitude: stop_point["lon"]
+        longitude: stop_point["lon"],
+        lines:
+          stop_point["lines"].map do |line|
+            {
+              id: line["id"],
+              line_name: line["name"],
+              uri: line["uri"]
+            }
+          end
       }
+  end
+
+  def formate_arrivals(arrivals)
+    lines = @station[:lines].each_with_object({}) do |line, hash|
+      hash[line[:id]] = []
+    end
+
+    arrivals.each do |arrival|
+      if lines.key?(arrival["lineId"])
+        lines[arrival["lineId"]] << {
+          destination_name: arrival["destinationName"],
+          destination_naptan_id: arrival["destinationNaptanId"],
+          direction: direction_formater(arrival["platformName"]),
+          platform: platform_formater(arrival["platformName"]),
+          time_to_station: arrival["timeToStation"],
+          expected_arrival: arrival["expectedArrival"]
+        }
+      end
+    end
+
+    lines
+  end
+
+  def direction_formater(platform_name)
+    valid_directions = [ "westbound", "eastbound", "southbound", "northbound" ]
+    direction = platform_name.split("-").first.strip.downcase
+    valid_directions.include?(direction) ? direction : "unknown"
+  end
+
+  def platform_formater(platform_name)
+    platform_name[/platform (\d+)/i, 1]
   end
 end
