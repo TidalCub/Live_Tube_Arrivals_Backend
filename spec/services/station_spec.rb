@@ -15,6 +15,20 @@ RSpec.describe Station do
           )
         end
       end
+
+      context "where there is more than one station" do
+        it "only returns the closest station" do
+          VCR.use_cassette("multiple_station_by_location") do
+            station = Station.new(latitude: 51.5029, longitude: -0.1134)
+            expect(station.station).to match_array(
+                naptan_id: "940GZZLUWLO",
+                name: "Waterloo Underground Station",
+                latitude: 51.503299,
+                longitude: -0.11478
+            )
+          end
+        end
+      end
     end
   end
 end
