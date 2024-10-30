@@ -1,0 +1,182 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/StopPoint/?lat=51.5412&lon=-0.0033&stopTypes=NaptanMetroStation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Oct 2024 10:11:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, must-revalidate, max-age=43200, s-maxage=86400
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Api-Entity-Payload:
+      - StopPoint
+      X-Backend:
+      - api
+      X-Cache:
+      - MISS
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Frame-Options:
+      - deny
+      X-Proxy-Connection:
+      - unset
+      X-Ttl:
+      - '86400.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - '1276385132'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Operation:
+      - StopPoint_GetByGeoPointByQueryLatQueryLonQueryStopTypesQueryRadiusQueryUseSt
+      X-Api:
+      - StopPoint
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - _cfuvid=ZpTXGkK.aqub7AYuXSCpjqsIdbhXlQWpJlN8hFRsrog-1730283111155-0.0.1.1-604800000;
+        path=/; domain=.tfl.gov.uk; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8daa9f9f9d166334-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"$type":"Tfl.Api.Presentation.Entities.StopPointsResponse, Tfl.Api.Presentation.Entities","centrePoint":[51.541,-0.003],"stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZDLSTD","modes":["dlr"],"icsCode":"1000226","stopType":"NaptanMetroStation","stationNaptan":"940GZZDLSTD","hubNaptanCode":"HUBSRA","lines":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"dlr","name":"DLR","uri":"/Line/dlr","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"},"routeType":"Unknown","status":"Unknown"}],"lineGroup":[{"$type":"Tfl.Api.Presentation.Entities.LineGroup,
+        Tfl.Api.Presentation.Entities","stationAtcoCode":"940GZZDLSTD","lineIdentifier":["dlr"]}],"lineModeGroups":[{"$type":"Tfl.Api.Presentation.Entities.LineModeGroup,
+        Tfl.Api.Presentation.Entities","modeName":"dlr","lineIdentifier":["dlr"]}],"status":true,"id":"940GZZDLSTD","commonName":"Stratford
+        DLR Station","distance":86.665980801783533,"placeType":"StopPoint","additionalProperties":[{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Bridge","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Cash Machines","sourceSystemKey":"StaticObjects","value":"4"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Gates","sourceSystemKey":"StaticObjects","value":"23"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Address","key":"Address","sourceSystemKey":"StaticObjects","value":"Stratford
+        Station BR Station St,London,E15 1DE"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Boarding Ramps","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Car park","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Help Points","sourceSystemKey":"StaticObjects","value":"0
+        on platforms, 0 in ticket halls, 0 elsewhere"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Payphones","sourceSystemKey":"StaticObjects","value":"8"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Photo Booths","sourceSystemKey":"StaticObjects","value":"0"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Toilets","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"WiFi","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Geo","key":"Zone","sourceSystemKey":"StaticObjects","value":"2/3"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Lifts","sourceSystemKey":"StaticObjects","value":"5"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Escalators","sourceSystemKey":"StaticObjects","value":"2"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Euro Cash Machines","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Ticket Halls","sourceSystemKey":"StaticObjects","value":"2"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Address","key":"PhoneNo","sourceSystemKey":"StaticObjects","value":"0845
+        330 9880"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities","category":"Facility","key":"Waiting
+        Room","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"AccessViaLift","sourceSystemKey":"LRAD","value":"Yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"AddtionalInformation","sourceSystemKey":"LRAD","value":"You
+        need to make a journey of up to 100m  including lifts and ramps to change
+        between  some lines. If you are boarding the Jubilee line at this station
+        and require level access to leave the train at Green Park, please make sure
+        that you travel in the corr"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"BlueBadgeCarParkSpaces","sourceSystemKey":"LRAD","value":"0"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"LimitedCapacityLift","sourceSystemKey":"LRAD","value":"No"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"SpecificEntranceRequired","sourceSystemKey":"LRAD","value":"No"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"TaxiRankOutsideStation","sourceSystemKey":"LRAD","value":"No"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"Toilet","sourceSystemKey":"LRAD","value":"Yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"BikePoints_790"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5944"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5718"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5697"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5485"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5945"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5946"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5459"}],"children":[{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZDLSTD1","indicator":"Platform
+        4B","stopLetter":"4B","modes":[],"icsCode":"1000226","stationNaptan":"940GZZDLSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZDLSTD1","commonName":"Stratford
+        DLR Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZDLSTD3","indicator":"Platform
+        16","stopLetter":"16","modes":[],"icsCode":"1000226","stationNaptan":"940GZZDLSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZDLSTD3","commonName":"Stratford
+        DLR Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZDLSTD4","indicator":"Platform
+        17","stopLetter":"17","modes":[],"icsCode":"1000226","stationNaptan":"940GZZDLSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZDLSTD4","commonName":"Stratford
+        DLR Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0}],"lat":51.541758,"lon":-0.003287},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUSTD","modes":["tube"],"icsCode":"1000226","stopType":"NaptanMetroStation","stationNaptan":"940GZZLUSTD","hubNaptanCode":"HUBSRA","lines":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"central","name":"Central","uri":"/Line/central","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"},"routeType":"Unknown","status":"Unknown"},{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"jubilee","name":"Jubilee","uri":"/Line/jubilee","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"},"routeType":"Unknown","status":"Unknown"}],"lineGroup":[{"$type":"Tfl.Api.Presentation.Entities.LineGroup,
+        Tfl.Api.Presentation.Entities","stationAtcoCode":"940GZZLUSTD","lineIdentifier":["central"]},{"$type":"Tfl.Api.Presentation.Entities.LineGroup,
+        Tfl.Api.Presentation.Entities","stationAtcoCode":"940GZZLUSTD","lineIdentifier":["jubilee"]}],"lineModeGroups":[{"$type":"Tfl.Api.Presentation.Entities.LineModeGroup,
+        Tfl.Api.Presentation.Entities","modeName":"tube","lineIdentifier":["central","jubilee"]}],"status":true,"id":"940GZZLUSTD","commonName":"Stratford
+        Underground Station","distance":95.137595480761334,"placeType":"StopPoint","additionalProperties":[{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"ServiceInfo","key":"Night","sourceSystemKey":"TransXchangeETL","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Cash Machines","sourceSystemKey":"StaticObjects","value":"4"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Euro Cash Machines","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Ticket Halls","sourceSystemKey":"StaticObjects","value":"2"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Lifts","sourceSystemKey":"StaticObjects","value":"5"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Toilets","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Waiting Room","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Address","key":"Address","sourceSystemKey":"StaticObjects","value":"Stratford
+        Station BR Station St,London,E15 1DE"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Car park","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Address","key":"PhoneNo","sourceSystemKey":"StaticObjects","value":"0845
+        330 9880"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities","category":"Facility","key":"Bridge","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Gates","sourceSystemKey":"StaticObjects","value":"23"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Help Points","sourceSystemKey":"StaticObjects","value":"0
+        on platforms, 0 in ticket halls, 0 elsewhere"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Payphones","sourceSystemKey":"StaticObjects","value":"8"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"WiFi","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Geo","key":"Zone","sourceSystemKey":"StaticObjects","value":"2/3"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Boarding Ramps","sourceSystemKey":"StaticObjects","value":"yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Escalators","sourceSystemKey":"StaticObjects","value":"2"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"Photo Booths","sourceSystemKey":"StaticObjects","value":"0"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"BikePoints_790"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5944"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5718"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5697"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5485"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5945"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5946"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5459"}],"children":[{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZLUSTD1","indicator":"Platform
+        3A","stopLetter":"3A","modes":[],"icsCode":"1000226","stationNaptan":"940GZZLUSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZLUSTD1","commonName":"Stratford
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZLUSTD2","indicator":"Platform
+        3","stopLetter":"3","modes":[],"icsCode":"1000226","stationNaptan":"940GZZLUSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZLUSTD2","commonName":"Stratford
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZLUSTD3","indicator":"Platform
+        6","stopLetter":"6","modes":[],"icsCode":"1000226","stationNaptan":"940GZZLUSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZLUSTD3","commonName":"Stratford
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0}],"lat":51.541806,"lon":-0.003458}],"pageSize":0,"total":0,"page":0}'
+  recorded_at: Wed, 30 Oct 2024 10:11:51 GMT
+recorded_with: VCR 6.3.1

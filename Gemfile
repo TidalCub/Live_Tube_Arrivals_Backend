@@ -42,4 +42,7 @@ group :development, :test do
   gem "rspec-rails", "~> 7.0.0"
   gem "vcr"
   gem "webmock"
+  gem "rails-controller-testing"
 end
+
+gem "httparty"
