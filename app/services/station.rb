@@ -85,6 +85,6 @@ class Station
   end
 
   def station_name_formater(station_name)
-    station_name.gsub("Underground Station", "").strip
+    station_name.present? ? station_name.gsub("Underground Station", "").strip : station_name
   end
 end
