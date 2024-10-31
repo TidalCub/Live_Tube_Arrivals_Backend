@@ -35,7 +35,7 @@ class Station
   def formate_stop_point(stop_point)
     {
         naptan_id: stop_point["naptanId"],
-        name: stop_point["commonName"],
+        name: station_name_formater(stop_point["commonName"]),
         latitude: stop_point["lat"],
         longitude: stop_point["lon"],
         lines:
@@ -57,7 +57,7 @@ class Station
     arrivals.each do |arrival|
       if lines.key?(arrival["lineId"])
         lines[arrival["lineId"]] << {
-          destination_name: arrival["destinationName"],
+          destination_name: station_name_formater(arrival["destinationName"]),
           destination_naptan_id: arrival["destinationNaptanId"],
           direction: direction_formater(arrival["platformName"]),
           platform: platform_formater(arrival["platformName"]),
@@ -82,5 +82,9 @@ class Station
 
   def platform_formater(platform_name)
     platform_name[/platform (\d+)/i, 1]
+  end
+
+  def station_name_formater(station_name)
+    station_name.gsub("Underground Station", "").strip
   end
 end

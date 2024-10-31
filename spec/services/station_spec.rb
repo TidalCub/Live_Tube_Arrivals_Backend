@@ -9,7 +9,7 @@ RSpec.describe Station do
           station = Station.new(latitude: 51.5412, longitude: -0.0033)
           expect(station.station).to match_array(
               naptan_id: "940GZZLUSTD",
-              name: "Stratford Underground Station",
+              name: "Stratford",
               latitude: 51.541806,
               longitude: -0.003458,
               lines: [
@@ -26,7 +26,7 @@ RSpec.describe Station do
             station = Station.new(latitude: 51.5029, longitude: -0.1134)
             expect(station.station).to match_array(
                 naptan_id: "940GZZLUWLO",
-                name: "Waterloo Underground Station",
+                name: "Waterloo",
                 latitude: 51.503299,
                 longitude: -0.11478,
                 lines: [
@@ -56,7 +56,7 @@ RSpec.describe Station do
         VCR.use_cassette("live_departures_predictions") do
           arrivals = station.live_departures_predictions
           expect(arrivals["central"].first).to match_array(
-            { destination_name: "West Ruislip Underground Station", destination_naptan_id: "940GZZLUWRP", direction: "westbound",
+            { destination_name: "West Ruislip", destination_naptan_id: "940GZZLUWRP", direction: "westbound",
             platform: "3", time_to_station: 19, expected_arrival: "2024-10-31T08:54:25Z" }
           )
         end
