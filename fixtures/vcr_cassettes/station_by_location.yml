@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.tfl.gov.uk/StopPoint/?lat=51.5412&lon=-0.0033&stopTypes=NaptanMetroStation
+    uri: https://api.tfl.gov.uk/StopPoint/?lat=51.5412&lon=-0.0033&radius=400&stopTypes=NaptanMetroStation
     body:
       encoding: US-ASCII
       string: ''
@@ -19,19 +19,21 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 30 Oct 2024 10:11:51 GMT
+      - Thu, 31 Oct 2024 08:54:08 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1744'
       Connection:
       - keep-alive
       Cache-Control:
       - public, must-revalidate, max-age=43200, s-maxage=86400
       Via:
       - 1.1 varnish
+      Accept-Ranges:
+      - bytes
       Age:
-      - '0'
+      - '71683'
       Access-Control-Allow-Headers:
       - Content-Type
       Access-Control-Allow-Methods:
@@ -43,7 +45,9 @@ http_interactions:
       X-Backend:
       - api
       X-Cache:
-      - MISS
+      - HIT
+      X-Cache-Hits:
+      - '12'
       X-Cacheable:
       - Yes. Cacheable
       X-Frame-Options:
@@ -55,7 +59,7 @@ http_interactions:
       X-Ttl-Rule:
       - '0'
       X-Varnish:
-      - '1276385132'
+      - 2144988288 2134236517
       X-Aspnet-Version:
       - 4.0.30319
       X-Operation:
@@ -67,12 +71,12 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Set-Cookie:
-      - _cfuvid=ZpTXGkK.aqub7AYuXSCpjqsIdbhXlQWpJlN8hFRsrog-1730283111155-0.0.1.1-604800000;
+      - _cfuvid=reIbTxEARjf1Dml_hghIUFr9iv3pFiOStEkYpn8517w-1730364848798-0.0.1.1-604800000;
         path=/; domain=.tfl.gov.uk; HttpOnly; Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 8daa9f9f9d166334-LHR
+      - 8db26b30bddb40ae-LHR
     body:
       encoding: ASCII-8BIT
       string: '{"$type":"Tfl.Api.Presentation.Entities.StopPointsResponse, Tfl.Api.Presentation.Entities","centrePoint":[51.541,-0.003],"stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
@@ -177,6 +181,31 @@ http_interactions:
         Underground Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
         Tfl.Api.Presentation.Entities","naptanId":"9400ZZLUSTD3","indicator":"Platform
         6","stopLetter":"6","modes":[],"icsCode":"1000226","stationNaptan":"940GZZLUSTD","hubNaptanCode":"HUBSRA","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZLUSTD3","commonName":"Stratford
-        Underground Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0}],"lat":51.541806,"lon":-0.003458}],"pageSize":0,"total":0,"page":0}'
-  recorded_at: Wed, 30 Oct 2024 10:11:51 GMT
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0}],"lat":51.541806,"lon":-0.003458},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZDLSHS","modes":["dlr"],"icsCode":"1003007","stopType":"NaptanMetroStation","stationNaptan":"940GZZDLSHS","lines":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"dlr","name":"DLR","uri":"/Line/dlr","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"},"routeType":"Unknown","status":"Unknown"}],"lineGroup":[{"$type":"Tfl.Api.Presentation.Entities.LineGroup,
+        Tfl.Api.Presentation.Entities","stationAtcoCode":"940GZZDLSHS","lineIdentifier":["dlr"]}],"lineModeGroups":[{"$type":"Tfl.Api.Presentation.Entities.LineModeGroup,
+        Tfl.Api.Presentation.Entities","modeName":"dlr","lineIdentifier":["dlr"]}],"status":true,"id":"940GZZDLSHS","commonName":"Stratford
+        High Street DLR Station","distance":339.23613283923686,"placeType":"StopPoint","additionalProperties":[{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Facility","key":"WiFi","sourceSystemKey":"StaticObjects","value":"no"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Geo","key":"Zone","sourceSystemKey":"StaticObjects","value":"2/3"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"AccessViaLift","sourceSystemKey":"LRAD","value":"Yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"BlueBadgeCarParkSpaces","sourceSystemKey":"LRAD","value":"0"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"LimitedCapacityLift","sourceSystemKey":"LRAD","value":"No"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"SpecificEntranceRequired","sourceSystemKey":"LRAD","value":"No"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"TaxiRankOutsideStation","sourceSystemKey":"LRAD","value":"No"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Accessibility","key":"Toilet","sourceSystemKey":"LRAD","value":"Yes"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"BikePoints_790"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5718"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5697"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5485"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"NearestPlaces","key":"SourceSystemPlaceId","sourceSystemKey":"StaticObjects","value":"TaxiRank_5459"}],"children":[{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZDLSHS1","indicator":"Platform
+        1","stopLetter":"1","modes":[],"icsCode":"1003007","stationNaptan":"940GZZDLSHS","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZDLSHS1","commonName":"Stratford
+        High Street DLR Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0},{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"9400ZZDLSHS2","indicator":"Platform
+        2","stopLetter":"2","modes":[],"icsCode":"1003007","stationNaptan":"940GZZDLSHS","lines":[],"lineGroup":[],"lineModeGroups":[],"status":true,"id":"9400ZZDLSHS2","commonName":"Stratford
+        High Street DLR Station","placeType":"StopPoint","additionalProperties":[],"children":[],"lat":0.0,"lon":0.0}],"lat":51.538196,"lon":-0.001078}],"pageSize":0,"total":0,"page":0}'
+  recorded_at: Thu, 31 Oct 2024 08:54:08 GMT
 recorded_with: VCR 6.3.1

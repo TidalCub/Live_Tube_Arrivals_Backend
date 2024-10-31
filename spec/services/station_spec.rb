@@ -57,7 +57,7 @@ RSpec.describe Station do
           arrivals = station.live_departures_predictions
           expect(arrivals["central"].first).to match_array(
             { destination_name: "West Ruislip Underground Station", destination_naptan_id: "940GZZLUWRP", direction: "westbound",
-            platform: "3", time_to_station: 50, expected_arrival: "2024-10-30T11:05:59Z" }
+            platform: "3", time_to_station: 19, expected_arrival: "2024-10-31T08:54:25Z" }
           )
         end
       end

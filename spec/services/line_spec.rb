@@ -6,8 +6,8 @@ RSpec.describe Line do
       it "returns the status of the line" do
         VCR.use_cassette("line_status") do
           expect(Line.new.status("central")).to match_array(
-            severity_descriptor: "Minor Delays",
-            severity_level: 9,
+            severity_descriptor: "Good Service",
+            severity_level: 10,
           )
         end
       end
